@@ -1,7 +1,7 @@
 {
-  "name": "ServerMan",
+  "name": "ERTBoilerplate",
   "version": "1.0.0",
-  "description": "A minimal server management application",
+  "description": "A minimal electronjs, reactjs, react-router and typescript application boilerplate",
   "main": "app/main.js",
   "scripts": {
     "postinstall": "install-app-deps",
@@ -13,15 +13,17 @@
     "prettify": "./node_modules/.bin/prettier --write \"**/*.ts*\"",
     "prestart": "npm run prettify"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/AienTech/electronjs-react-typescript-boilerplate",
   "keywords": [
-    "Electron",
+    "electron",
     "quick",
     "start",
-    "tutorial",
-    "demo"
+    "reactjs",
+    "typescript",
+    "react-router",
+    "react-router-dom"
   ],
-  "author": "GitHub",
+  "author": "Aien Saidi",
   "license": "CC0-1.0",
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -57,7 +59,7 @@
     "react-router-dom": "^4.4.0"
   },
   "build": {
-    "appId": "com.swwwan.serverman",
+    "appId": "com.my.app",
     "files": [
       "app/**/*",
       "node_modules/**/*",

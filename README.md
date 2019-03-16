@@ -31,8 +31,6 @@ npm run test
 
 ## Packaging
 
-Replace the icon inside the `build` folder and run
-
 ```bash
 npm run release
 ```
