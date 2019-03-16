@@ -1,0 +1,72 @@
+{
+  "name": "ServerMan",
+  "version": "1.0.0",
+  "description": "A minimal server management application",
+  "main": "app/main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "build": "gulp build",
+    "start": "gulp start",
+    "test": "gulp test",
+    "release": "gulp release",
+    "e-builder": "./node_modules/.bin/electron-builder",
+    "prettify": "./node_modules/.bin/prettier --write \"**/*.ts*\"",
+    "prestart": "npm run prettify"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.1",
+    "babel-plugin-import": "^1.11.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "electron": "~1.8.2",
+    "electron-builder": "^20.0.8",
+    "electron-react-devtools": "^0.5.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "gulp-import-css": "^0.1.3",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^5.0.1",
+    "jest": "^22.4.2",
+    "prettier": "1.16.4",
+    "react-test-renderer": "^16.2.0",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^3.14.1",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^4.3.1",
+    "electron-is-dev": "^0.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.4.0"
+  },
+  "build": {
+    "appId": "com.swwwan.serverman",
+    "files": [
+      "app/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": "AppImage",
+      "category": "Development"
+    },
+    "publish": null
+  }
+}

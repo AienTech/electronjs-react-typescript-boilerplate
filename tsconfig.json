@@ -1,0 +1,26 @@
+{
+	"files": [
+		"main.ts",
+		"preferences.ts",
+		"src/index.tsx",
+	],
+	"include": [
+		"src/**/*.ts*"
+	],
+	"exclude": [
+		"node_modules"
+	],
+	"compilerOptions": {
+		"noImplicitAny": false,
+		"removeComments": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"sourceMap": true,
+		"moduleResolution": "node",
+		"module": "commonjs",
+		"target": "es5",
+		"jsx": "react",
+		"allowSyntheticDefaultImports": true,
+	}
+}
